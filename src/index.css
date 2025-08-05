@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+    background-color: #0f172a; /* slate-900 */
+    color: #e2e8f0; /* slate-200 */
+}
+/* Estilos para o Furigana */
+rt {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 0.75rem; /* 12px se a base for 16px */
+    user-select: none; /* Impede que o texto do furigana seja selecionado */
+    font-weight: 500;
+}
+ruby:hover > rt {
+    opacity: 1;
+}

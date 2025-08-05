@@ -1,0 +1,6 @@
+{
+  "name": "Nihongo Definition",
+  "description": "An application to search for Japanese word definitions. Each word in the definition is clickable, allowing for further exploration, creating a nested dictionary experience. Search history is kept on a sidebar.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
